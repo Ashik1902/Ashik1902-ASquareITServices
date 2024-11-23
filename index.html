@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASquareITService</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo.jpeg" alt="ASquareITService Logo" class="logo">
+            <h1 class="company-name">ASquareITService</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li> <!-- Corrected the link to #about -->
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#our-info">Our Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header-divider"></div>
+    
+    <!-- Banner Section -->
+    <section id="home" class="banner">
+        <h1>Your Trusted Partner in IT Support Services</h1>
+        <p>Empowering businesses with reliable IT infrastructure, network management, and expert IT support.</p>
+        <a href="#contact" class="btn">Get Support Now</a>
+    </section>
+
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p class="about-description">
+            We are your trusted partner for IT support, providing 24/7 services to ensure your business runs smoothly.
+        </p>
+        <div class="features">
+            <div class="feature-box">
+                <h3 class="feature-title">24/7 Service</h3>
+                <img src="images/24 SERVICE.jpg" alt="24/7 Support" class="feature-icon">
+            </div>
+            <div class="feature-box">
+                <h3 class="feature-title">Data Security</h3>
+                <img src="images/data security.jpg" alt="Secure Network" class="feature-icon">
+            </div>
+            <div class="feature-box">
+                <h3 class="feature-title">IT Solutions</h3>
+                <img src="images/it support.jpg" alt="Reliable IT Solutions" class="feature-icon">
+            </div>
+            <div class="feature-box">
+                <h3 class="feature-title">Expert Team</h3>
+                <img src="images/experts.jpeg" alt="Expert Team" class="feature-icon">
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p class="services-description">
+            At ASquareITService, we offer a range of IT support services designed to help businesses optimize their operations and ensure smooth functioning.
+        </p>
+        <div class="service-boxes">
+            <!-- Service 1: IT Infrastructure -->
+            <div class="service-box">
+                <img src="images/it infrastructure.webp" alt="IT Infrastructure" class="service-image">
+                <h3 class="service-title">IT Infrastructure</h3>
+            </div>
+            
+            <!-- Service 2: Network Management -->
+            <div class="service-box">
+                <img src="images/network managemnet.webp" alt="Network Management" class="service-image">
+                <h3 class="service-title">Network Management</h3>
+            </div>
+            
+            <!-- Service 3: Data Recovery -->
+            <div class="service-box">
+                <img src="images/data backup.webp" alt="Data Recovery" class="service-image">
+                <h3 class="service-title">Data Recovery</h3>
+            </div>
+            
+            <!-- Service 4: Cloud Service -->
+            <div class="service-box">
+                <img src="images/cloud backup.jpg" alt="Cloud Service" class="service-image">
+                <h3 class="service-title">Cloud Service</h3>
+            </div>
+            
+            <!-- Service 5: Hardware Repair -->
+            <div class="service-box">
+                <img src="images/hardware repair.jpg" alt="Hardware Repair" class="service-image">
+                <h3 class="service-title">Hardware Repair</h3>
+            </div>
+            
+            <!-- Service 6: IT Solutions -->
+            <div class="service-box">
+                <img src="images/it support.jpg" alt="IT Solutions" class="service-image">
+                <h3 class="service-title">IT Solutions</h3>
+            </div>
+        </div>
+    </section>   
+
+    <div class="section-divide"></div>
+
+    <section id="contact-us" class="contact-us">
+        <h2>Contact Us</h2>
+        <p>We're here to assist you! Please fill out the form below and our team will reach out as soon as possible.</p>
+    
+        <form action="confirmation .html" method="post" class="contact-form">
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+    
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+    
+            <!-- Phone Number Input -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number (with country code)">
+            </div>
+    
+            <!-- WhatsApp availability -->
+            <div class="form-group">
+                <label for="whatsapp">Is this number applicable for WhatsApp?</label>
+                <select id="whatsapp" name="whatsapp">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+    
+            <!-- Issue Type -->
+            <div class="form-group">
+                <label for="issue-type">Type of Issue</label>
+                <select id="issue-type" name="issue-type">
+                    <option value="it-infrastructure">IT Infrastructure</option>
+                    <option value="network-management">Network Management</option>
+                    <option value="data-recovery">Data Recovery</option>
+                    <option value="cloud-service">Cloud Service</option>
+                    <option value="hardware-repair">Hardware Repair</option>
+                    <option value="it-solution">IT Solutions</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Address Input -->
+            <div class="form-group">
+                <label for="address">Your Address</label>
+                <input type="text" id="address" name="address" required placeholder="Enter your address">
+            </div>
+    
+            <!-- Message Box -->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Describe your issue or inquiry"></textarea>
+            </div>
+    
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <div class="section-divider"></div>
+    
+    <!-- Company Information Section -->
+<footer id="our-info" class="company-info">
+    <div class="container">
+        <!-- Company Information -->
+        <div class="info">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+                <li><a href="#tax-info">Tax Information</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <ul>
+                <li><strong>Phone:</strong> +1 234 567 890</li>
+                <li><strong>Address:</strong> 123 Street Name, City, State, Country, 123456</li>
+                <li><strong>Email:</strong> support@asquareitservice.com</li>
+            </ul>
+        </div>
+
+       
+
+        <!-- Follow Us On -->
+        <div class="follow-us">
+            <h3>Follow Us On</h3>
+            <ul>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Common Footer Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 ASquareITService. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    
+        
+</body>
+</html>

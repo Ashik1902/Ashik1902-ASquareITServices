@@ -1,0 +1,632 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #000000, #004080); /* Same gradient as in body */
+    color: #e0e0e0; /* Softer text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo and Company Name */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Light blue text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light text color */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px; /* Rounded buttons */
+    transition: all 0.3s ease;
+    background: rgba(0, 64, 128, 0.6); /* Semi-transparent background */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Slight shadow for buttons */
+}
+
+.nav-list li a:hover {
+    background: #40c4ff; /* Bright blue hover effect */
+    color: #000000; /* Black text for contrast */
+    transform: scale(1.1); /* Subtle button enlargement on hover */
+    box-shadow: 3px 3px 8px rgba(0, 64, 128, 0.8); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(0, 0, 0, 0.9); /* Darker mobile menu background */
+        padding: 15px;
+        border-radius: 8px;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        display: none;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #40c4ff; /* Light blue toggle icon */
+    }
+}
+
+/* For smaller screens, hide navigation initially */
+.nav-toggle {
+    display: none;
+}
+
+/* Banner Section Styles */
+.banner {
+    background: linear-gradient(90deg, #000000, #004080); /* Dark gradient background */
+    color: #f0f8ff; /* Soft white-blue text for contrast */
+    text-align: center;
+    padding: 4rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+    border-bottom: 4px solid #ff6600; /* Accent border */
+}
+
+.banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add depth to the heading */
+}
+
+.banner p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc; /* Softer tone for secondary text */
+    line-height: 1.8; /* Improve readability */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner .btn {
+    background: #ff4500;
+    color: #ffffff;
+    padding: 0.8rem 2.5rem;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.banner .btn:hover {
+    background: #e63900;
+    color: #ffffff;
+    box-shadow: 0 0 15px #ffffff; /* Glowing effect */
+    transform: scale(1.05); /* Slight scale */
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500; /* Add glow to text */
+}
+
+
+/* Body Section Styles (using header background color) */
+.section-body {
+    background: linear-gradient(90deg, #000000, #004080); /* Same gradient background as header */
+    color: #f0f8ff; /* White text for better contrast */
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* General Section Styling */
+section {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4; /* Light grey background for other sections */
+    color: #333333; /* Neutral text color */
+}
+
+section .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    text-align: left;
+}
+
+/* About US*/
+/* About Us Section */
+/* About Us Section with Solid Color Background */
+/* About Section Styling */
+.about {
+    padding: 4rem 1rem;
+    background: url("images/hand\ shake.jpg") no-repeat center center / cover; /* Background image only for About Us section */
+    color: #ffffff; /* Change text color for better contrast */
+    text-align: center;
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+}
+
+/* Section Heading */
+.about h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* White color for better visibility against dark background */
+    margin-bottom: 2rem; /* More space below the heading */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Stronger text shadow */
+}
+
+/* Section Description */
+.about-description {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #f1f1f1; /* Slightly lighter gray for readability */
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; /* Make content bolder */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Add shadow for better visibility */
+}
+
+/* Features Container */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Increased gap for better separation */
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Individual Feature (Images + Titles) */
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 22%;
+    margin-bottom: 2rem;
+}
+
+/* Image Styling */
+.feature-icon {
+    height: 180px; /* Adjusted image size */
+    width: 180px; /* Adjusted image size */
+    object-fit: cover;
+    border-radius: 50%; /* Curvy edges for images */
+    margin-bottom: 3rem; /* Increased space between image and title */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Feature Image */
+.feature-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+/* Title Styling */
+.feature-title {
+    font-size: 1.3rem; /* Increased font size for better visibility */
+    color: #ffffff; /* White for strong contrast */
+    font-weight: bold;
+    margin-top: 0; /* Removed unnecessary margin-top */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Stronger shadow for better contrast */
+}
+
+/* Media Query for Smaller Screens (Mobile Responsiveness) */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%; /* Makes each feature box take more space on mobile */
+    }
+}
+
+/* Header Divider */
+.header-divider {
+    height: 4px; /* Line thickness */
+    background: linear-gradient(90deg, #ff4500, #ff6600); /* Gradient line */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 0;
+}
+
+/* Services Section */
+.services {
+    background: linear-gradient(90deg, #000000, #004080); /* Same gradient background as the header */
+    padding: 4rem 1rem;
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    color: #ffffff; /* White text color */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.services-description {
+    font-size: 1.2rem;
+    color: #dcdcdc; /* Lighter text color for description */
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Service Boxes Container */
+.service-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 services per row */
+    gap: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Individual Service Box */
+.service-box {
+    background-color: #ffffff; /* White background for each service box */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px); /* Slight upward movement on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.service-image {
+    width: 100%; /* Make the image span the full width of the box */
+    height: 200px;
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.service-title {
+    font-size: 1.5rem;
+    color: #00509e; /* Blue color for titles */
+    font-weight: bold;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .service-boxes {
+        grid-template-columns: 1fr 1fr; /* 2 services per row on smaller screens */
+    }
+}
+
+/* External Background for the Contact Us Section */
+.contact-us {
+    background: linear-gradient(90deg, #000000, #004080); /* Using header background */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 5rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Heading */
+.contact-us h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Depth for the title */
+}
+
+/* Section Description */
+.contact-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc;
+    line-height: 1.8;
+}
+
+/* Form Container */
+/* External Background for the Contact Us Section */
+.contact-us {
+    background: linear-gradient(90deg, #000000, #004080); /* Using header background */
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 15px;
+    /* No border on form container */
+}
+
+/* Service Section (Equalize with Contact Us background) */
+.services {
+    background: linear-gradient(90deg, #000000, #004080); /* Match background with Contact Us */
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-radius: 15px;
+}
+
+/* Section Heading */
+.contact-us h2,
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Depth for the title */
+}
+
+/* Section Description */
+.contact-us p,
+.services p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #dcdcdc;
+    line-height: 1.8;
+}
+
+/* Form Container (Contact Us) */
+.contact-form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 700px; /* Smaller form width */
+    margin: auto;
+    transform: translateY(50px);
+    animation: slideIn 0.8s ease-out forwards; /* Animation for form */
+}
+
+/* Form Animation: Slide-In */
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+
+/* Form Labels */
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Input Fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    transition: all 0.3s ease; /* Smooth transitions for interaction */
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #004080;
+    outline: none;
+    background-color: #e7f2fa;
+    transform: scale(1.02); /* Slight scale effect */
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #ff6600;
+    color: white;
+    padding: 0.9rem 2.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Submit Button Hover Effect */
+.submit-btn:hover {
+    background-color: #e63900;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 2rem;
+        width: 100%; /* Make the form take full width */
+    }
+    .contact-us {
+        padding: 3rem 1rem;
+    }
+    .services {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Section Divider */
+.section-divider {
+    height: 4px; /* Line thickness */
+    background: linear-gradient(90deg, #ff4500, #ff6600); /* Gradient color similar to header */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 4rem 0; /* Add space around the divider */
+}
+
+/* Footer Section */
+.company-info {
+    background-color: #000000; /* Black background for the footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 4rem 1rem;
+}
+
+/* Container for the Footer Content */
+.company-info .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Ensure items are aligned properly on smaller screens */
+}
+
+/* Each Section Inside the Footer */
+.company-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #40c4ff; /* Light blue color for headings */
+}
+
+/* Lists inside each footer section */
+.company-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.company-info ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer Links */
+.company-info a {
+    text-decoration: none;
+    color: #ffffff; /* White text for links */
+    transition: color 0.3s ease;
+}
+
+.company-info a:hover {
+    color: #ff4500; /* Orange color on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #444444; /* Subtle border at the top */
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+    color: #888888; /* Lighter gray text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .company-info .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info .container > div {
+        margin-bottom: 2rem; /* Space between sections on mobile */
+    }
+}
+
+/* About Us Section - Flat Corners */
+.about, .features, .feature-box {
+    border-radius: 0; /* Remove the rounded corners */
+}
+
+/* Services Section - Flat Corners */
+.services, .service-box {
+    border-radius: 0; /* Remove the rounded corners */
+}
+
+/* Contact Us Section - Flat Corners */
+.contact-us, .form-container {
+    border-radius: 0; /* Remove the rounded corners */
+}
+
+/* General Section Border Radius Removal */
+section {
+    border-radius: 0; /* Ensures no rounded corners for other sections */
+}
+
+/* Footer Section - Flat Corners */
+.footer {
+    border-radius: 0; /* Flat corners for the footer */
+}
+
+
+/* Divider between Sections */
+.section-divider {
+    height: 4px; /* Line thickness */
+    background: linear-gradient(90deg, #ff4500, #ff6600); /* Gradient line */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 0; /* Margin between the sections */
+}
+
+/* Divider between Sections */
+.section-divide {
+    height: 4px; /* Line thickness */
+    background: linear-gradient(90deg, #ffffff, #000000); /* Gradient line */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 0; /* Margin between the sections */
+}
+
+
